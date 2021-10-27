@@ -29,7 +29,7 @@ func main() {
 		panic(err)
 	}
 
-	// Create SOCKS5 proxy on localhost port 8000
+	// Create SOCKS5 proxy
 	if err := server.ListenAndServe("tcp", config.host+":"+config.port); err != nil {
 		panic(err)
 	}
